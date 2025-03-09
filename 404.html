@@ -62,10 +62,10 @@
     <h1>Um, this wasn't supposed to happen.</h1>
     <p>Register Service Worker using the button below, then reload the page.</p>
     <p id="uv-error"></p>
-    <code id="uv-error-code" onclick="location.reload()"></code><br><br>
+    <code id="uv-error-code"></code><br><br>
     
     
-    <button id="uv-register-sw">Register ServiceWorker</button>
+    <button id="uv-register-sw" onclick="location.reload()">Register ServiceWorker</button>
     <script src="uv/uv.bundle.js" defer></script>
     <script src="uv/uv.config.js" defer></script>
     <script src="register-sw.js" defer></script>
