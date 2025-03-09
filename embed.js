@@ -16,5 +16,5 @@ registerSW()
     );
   })
   .catch((err) => {
-    alert(`Your boat crashed!\nAn error occured:\n${err}`);
+    alert(`Your boat crashed!\nAn error occured (you probably need to stop using http you moron)\n${err}`);
   });
