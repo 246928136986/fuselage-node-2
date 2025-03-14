@@ -2,7 +2,7 @@ self.__uv$config = {
     prefix: '/embed/',
     
     // BARE SERVER
-    bare:'https://nauka.politechnika-nova.edu.pl/',
+    bare:'https://images.maigec.cl/bare/',
     
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
