@@ -115,7 +115,6 @@
 </head>
 
 <body>
-     <canvas id="canvas"></canvas>
 
     <br><br><br><br><br><br><br><br><br>
      
@@ -127,45 +126,8 @@
 
     
 
-    <script>
-    const urlInput = document.getElementById('urlInput');
-    const outputLink = document.getElementById('outputLink');
-    const underText = document.getElementById('underText');
 
-    urlInput.addEventListener('input', function () {
-        const url = urlInput.value.trim();
-        if (url) {
-            const formattedUrl = url.startsWith('https://') ? url : 'https://' + url;
-            outputLink.textContent = `https://embeddr.rhw.one/embed#${formattedUrl}`;
-            underText.innerHTML = '<strong>Click</strong> the text above to copy it!';
-            underText.style.opacity = '1';
-        } else {
-            outputLink.textContent = '';
-            underText.innerHTML = 'a';
-            underText.style.opacity = '0';
-        }
-    });
 
-    outputLink.addEventListener('click', function () {
-        // Create a temporary textarea element
-        const tempTextarea = document.createElement('textarea');
-        tempTextarea.value = outputLink.textContent;
-        document.body.appendChild(tempTextarea);
-
-        // Select and copy the text
-        tempTextarea.select();
-        tempTextarea.setSelectionRange(0, 99999); // For mobile devices
-        document.execCommand('copy');
-
-        // Remove the temporary textarea element
-        document.body.removeChild(tempTextarea);
-
-        // Provide feedback
-        underText.innerHTML = '<strong>Copied to clipboard!</strong>';
-    });
-</script>
-
-    <script src="stars.js"></script>
 </body>
 
 </html>
