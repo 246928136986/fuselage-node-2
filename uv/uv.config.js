@@ -2,7 +2,7 @@ self.__uv$config = {
     prefix: '/embed/',
     
     // BARE SERVER
-    bare:'https://images.maigec.cl/bare/',
+    bare:'https://images.uni-nano.com/bare/',
     
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
